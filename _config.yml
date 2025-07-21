@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title                    : "Prof. Ting Cao"
+title                    : "Dr. Ting Cao"
 title_separator          : "-"
 name                     : &name "Ting Cao"
 description              : &description "This is the personal website of Prof. Ting Cao, a researcher in the field of foundation models, inference systems, and novel hardware. Here you can find information about my research, publications, and teaching activities."
@@ -23,7 +23,7 @@ repository               : "tingcao952/tingcao952.github.io"
 author:
   # Biographic information
   avatar           : "bio-tingcao.jpg"
-  name             : "Prof. Ting Cao" 
+  name             : "Dr. Ting Cao" 
   bio              : "Professor at Institute of AI Industry research (AIR)"
   location         : "12F, Bldg C, TusPark, Haidian, Beijing"
   employer         : "Tsinghua University"
