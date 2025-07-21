@@ -23,11 +23,10 @@ repository               : "tingcao952/tingcao952.github.io"
 author:
   # Biographic information
   avatar           : "bio-tingcao.jpg"
-  name             : "Prof. Ting Cao"
-  pronouns         : "she/her"  
-  bio              : "A researcher in the field of foundation models, inference systems, and novel hardware."
-  location         : "12F, Bldg C, TusPark, Haidian District, Beijing, China"
-  employer         : "Institute of AI Industry research, Tsinghua University"
+  name             : "Prof. Ting Cao" 
+  bio              : "Professor at Institute of AI Industry research (AIR)"
+  location         : "12F, Bldg C, TusPark, Haidian, Beijing"
+  employer         : "Tsinghua University"
   uri              : # URL
   email            : "tingcao@mail.tsinghua.edu.cn" 
 
