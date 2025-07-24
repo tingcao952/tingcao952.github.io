@@ -17,7 +17,8 @@ author_profile: true
   <h2 id="{{ year.name }}" class="archive__subtitle">{{ year.name }}</h2>
   <hr />
   {% assign counter = 0 %}
-  {% for post in year.items %}
+  {% assign sorted_posts = year.items | sort: 'date' | reverse %}
+  {% for post in sorted_posts %}
     {% assign counter = counter | plus: 1 %}
     {% include archive-single.html counter=counter %}
   {% endfor %}
