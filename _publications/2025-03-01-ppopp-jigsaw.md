@@ -1,14 +1,11 @@
 ---
-title: "Paper Title Number 1"
+title: "Jigsaw: Toward Conflict-free Vectorized Stencil Computation by Tessellating Swizzled Registers"
 collection: publications
-category: manuscripts
-permalink: /publication/2009-10-01-paper-title-number-1
-excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
-date: 2009-10-01
-venue: 'Journal 1'
-slidesurl: 'http://academicpages.github.io/files/slides1.pdf'
-paperurl: 'http://academicpages.github.io/files/paper1.pdf'
-bibtexurl: 'http://academicpages.github.io/files/bibtex1.bib'
-citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
+category: conferences
+permalink: /publication/2025-03-01-ppopp-jigsaw
+excerpt: 'Stencil computation plays a pivotal role in numerous scientific and engineering applications. Previous studies have extensively investigated vectorization techniques to enhance in-core parallelism; however, the performance bottleneck caused by data alignment conflicts (DAC) has not been effectively resolved in all dimensions. This paper proposes Jigsaw, a conflict-free vectorization method to reduce DAC across all dimensions by tessellating swizzled finest-grained lanes. Jigsaw comprises three key components: Lane-based Butterfly Vectorization, SVD-based Dimension Flattening, and Iteration-based Temporal Merging. These components effectively address DAC across spatial and temporal dimensions. Experimental results on different machines demonstrate that Jigsaw could achieve a significant improvement compared to the state-of-the-art techniques, with an average speedup of 2.31x on various stencil kernels.'
+date: 2025-03-01
+venue: '30th ACM SIGPLAN Annual Symposium on Principles and Practice of Parallel Programming (PPoPP)'
+paperurl: 'https://dl.acm.org/doi/abs/10.1145/3710848.3710886'
+citation: 'Yiwei Zhang, Kun Li, Liang Yuan, Yunquan Zhang, Ting Cao, Mao Yang. (2025). "Jigsaw: Toward Conflict-free Vectorized Stencil Computation by Tessellating Swizzled Registers." <i>PPoPP</i>.'
 ---
-The contents above will be part of a list of publications, if the user clicks the link for the publication than the contents of section will be rendered as a full page, allowing you to provide more information about the paper for the reader. When publications are displayed as a single page, the contents of the above "citation" field will automatically be included below this section in a smaller font.
