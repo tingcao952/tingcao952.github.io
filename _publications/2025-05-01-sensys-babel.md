@@ -1,0 +1,11 @@
+---
+title: "Babel: A Scalable Pre-trained Model for Multi-Modal Sensing via Expandable Modality Alignment"
+collection: publications
+category: conferences
+permalink: /publication/2025-05-01-sensys-babel
+excerpt: 'This paper presents Babel, the expandable modality alignment model, specially designed for multi-modal sensing. While there has been considerable work on multi-modality alignment, they all struggle to effectively incorporate multiple sensing modalities due to the data scarcity constraints. How to utilize multi-modal data with partial pairings in sensing remains an unresolved challenge. Babel tackles this challenge by introducing the concept of expandable modality alignment. The key idea involves transforming the N-modality alignment into a series of binary-modality alignments. Novel techniques are also proposed to further mitigate data scarcity issue and balance the contribution of the newly incorporated modality with the previously established modality alignment during the expandable alignment process. We provide the comprehensive implementation. In the pre-training phase, Babel currently aligns 6 sensing modalities, namely Wi-Fi, mmWave, IMU, LiDAR, video, and depth. For the deployment phase, as a foundation model, any single or combination of aligned modalities could be selected from Babel and applied to downstream tasks.Evaluation demonstrates Babel outstanding performance on eight human activity recognition datasets, compared to a broad range of baselines e.g., the SOTA single-modal sensing networks, multi-modal sensing framework, and multi-modal large language models. Babel not only improves the performance of individual modality sensing (12% averaged accuracy improvement), but also effectively fuses multiple available modalities (up to 22% accuracy increase). Case studies also highlight emerging application scenarios empowered by Babel, including cross-modality retrieval (i.e., sensing imaging), and bridging LLMs for sensing comprehension.'
+date: 2025-05-01
+venue: 'The 23rd ACM Conference on Embedded Networked Sensor Systems (SenSys)'
+paperurl: 'https://dl.acm.org/doi/abs/10.1145/3715014.3722068'
+citation: 'Shenghong Dai, Shiqi Jiang, Yifan Yang, Ting Cao, Mo Li, S. Banerjee, Lili Qiu. (2025). "Babel: A Scalable Pre-trained Model for Multi-Modal Sensing via Expandable Modality Alignment." <i>SenSys</i>.'
+---

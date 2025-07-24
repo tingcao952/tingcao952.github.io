@@ -1,0 +1,11 @@
+---
+title: "PruneAug: Bridging DNN Pruning and Inference Latency on Diverse Sparse Platforms Using Automatic Layerwise Block Pruning"
+collection: publications
+category: conferences
+permalink: /publication/2024-08-12-tc-pruneaug
+excerpt: 'Although pruning is an effective technique to reduce the number of weights in deep neural networks (DNNs), it remains challenging for the resulting sparse networks to perform low-latency inference on everyday hardware. This problem is mainly caused by the incompatibility between the unstructured sparsity adopted for accuracy preservation and the sparse platform (the combination of sparse kernel library and the underlying hardware) expectation of regular sparse patterns. In order to resolve this conflict, we propose PruneAug, an augmentation over existing unstructured pruning methods that finds block-sparse networks with much lower latency but preserves the accuracy. The fundamental idea of PruneAug is to prune the network with a layerwise block dimension assignment in a platform-aware fashion. Subject to an accuracy-loss constraint, PruneAug minimizes the latency of the block sparse network by jointly optimizing this layerwise block dimension assignment and the network sparsity level. Admittedly, this approach expands the solution space. To curb our search cost, we include multiple optimizations while designing PruneAug search space and strategy. Our evaluation over diverse pruning methods, DNNs, datasets, and sparse platforms shows that PruneAug enables different pruning methods to achieve speedup (as much as ∼13× depending on the platform) while maintaining competitive accuracy relative to unstructured sparsity, extracting the full potential of sparse platforms.'
+date: 2024-08-12
+venue: 'IEEE Transactions on Computers (TC)'
+paperurl: 'https://ieeexplore.ieee.org/abstract/document/10633894'
+citation: 'Hanfei Geng, Yifei Liu, Yujie Zheng, Li Lyna Zhang, Jingwei Sun, Yujing Wang, Yang Wang, Guangzhong Sun, Mao Yang, Ting Cao, Yunxin Liu. (2024). "PruneAug: Bridging DNN Pruning and Inference Latency on Diverse Sparse Platforms Using Automatic Layerwise Block Pruning." <i>TC</i>.'
+---

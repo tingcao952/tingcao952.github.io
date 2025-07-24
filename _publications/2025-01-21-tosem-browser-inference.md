@@ -1,0 +1,11 @@
+---
+title: "Anatomizing Deep Learning Inference in Web Browsers"
+collection: publications
+category: conferences
+permalink: /publication/2025-01-21-tosem-browser-inference
+excerpt: 'Web applications have increasingly adopted Deep Learning (DL) through in-browser inference, wherein DL inference performs directly within Web browsers. The actual performance of in-browser inference and its impacts on the Quality of Experience (QoE) remain unexplored, and urgently require new QoE measurements beyond traditional ones, e.g., mainly focusing on page load time. To bridge this gap, we make the first comprehensive performance measurement of in-browser inference to date. Our approach proposes new metrics to measure in-browser inference: responsiveness, smoothness, and inference accuracy. Our extensive analysis involves 9 representative DL models across Web browsers of 50 popular PC devices and 20 mobile devices. The results reveal that in-browser inference exhibits a substantial latency gap, averaging 16.9 times slower on CPU and 4.9 times slower on GPU compared to native inference on PC devices. The gap on mobile CPU and mobile GPU is 15.8 times and 7.8 times, respectively. Furthermore, we identify contributing factors to such latency gap, including underutilized hardware instruction sets, inherent overhead in the runtime environment, resource contention within the browser, and inefficiencies in software libraries and GPU abstractions. Additionally, in-browser inference imposes significant memory demands, at times exceeding 334.6 times the size of the DL models themselves, partly attributable to suboptimal memory management. We also observe that in-browser inference leads to a significant 67.2% increase in the time it takes for GUI components to render within Web browsers, significantly affecting the overall user QoE of Web applications reliant on this technology.'
+date: 2025-01-21
+venue: 'ACM Transactions on Software Engineering and Methodology (TOSEM)'
+paperurl: 'https://dl.acm.org/doi/full/10.1145/3688843'
+citation: 'Qipeng Wang, Shiqi Jiang, Zhenpeng Chen, Xu Cao, Yuanchun Li, Aoyu Li, Yun Ma, Ting Cao, Xuanzhe Liu. (2024). "Anatomizing Deep Learning Inference in Web Browsers." <i>TOSEM</i>.'
+---

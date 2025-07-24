@@ -1,0 +1,11 @@
+---
+title: "LoRAStencil: Low-Rank Adaptation of Stencil Computation on Tensor Cores"
+collection: publications
+category: conferences
+permalink: /publication/2024-11-01-sc-lorastencil
+excerpt: 'Stencil computations play a pivotal role in numerous scientific and industrial applications, yet their efficient execution on specialized hardware accelerators like Tensor Core Units (TCUs) remains a challenge. This paper introduces LoRAStencil1, a novel stencil computing system designed to mitigate memory access redundancies on TCUs through low-rank adaptation. We first identify a nuanced form of this redundancy, dimension residue, specific to TCUs. Then LoRAStencil leverages orchestrated mathematical transformations to decompose stencil weight matrices into smaller rank-1 matrices, facilitating efficient data gathering along residual dimensions. It comprises three key components: memory-efficient Residual Dimension Gathering to facilitate more data reuse, compute-saving Pyramidal Matrix Adaptation to exploit the inherent low-rank characteristics, and performance-boosting Butterfly Vector Swapping to circumvent all data shuffles. Comprehensive evaluations demonstrate that LoRAStencil address dimension residues effectively, which outperforms state-of-the-arts with up to a 2.16x speedup, offering promising advancements for efficient tensorized stencil computation on TCUs by Low-Rank Adaptation.'
+date: 2024-11-01
+venue: 'International Conference for High Performance Computing, Networking, Storage, and Analysis (SC’24)'
+paperurl: 'https://ieeexplore.ieee.org/abstract/document/10793164'
+citation: 'Yiwei Zhang, Kun Li, Liang Yuan, Jiawen Cheng, Yunquan Zhang, Ting Cao, Mao Yang. (2024). "LoRAStencil: Low-Rank Adaptation of Stencil Computation on Tensor Cores." <i>SC’24</i>.'
+---

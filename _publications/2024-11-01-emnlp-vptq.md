@@ -1,0 +1,11 @@
+---
+title: "VPTQ: Extreme Low-bit Vector Post-Training Quantization for Large Language Models"
+collection: publications
+category: conferences
+permalink: /publication/2024-11-01-emnlp-vptq
+excerpt: 'Scaling model size significantly challenges the deployment and inference of Large Language Models (LLMs). Due to the redundancy in LLM weights, recent research has focused on pushing weight-only quantization to extremely low-bit (even down to 2 bits). It reduces memory requirements, optimizes storage costs, and decreases memory bandwidth needs during inference. However, due to numerical representation limitations, traditional scalar-based weight quantization struggles to achieve such extreme low-bit. Recent research on Vector Quantization (VQ) for LLMs has demonstrated the potential for extremely low-bit model quantization by compressing vectors into indices using lookup tables. In this paper, we introduce Vector Post-Training Quantization (VPTQ) for extremely low-bit quantization of LLMs. We use Second-Order Optimization to formulate the LLM VQ problem and guide our quantization algorithm design by solving the optimization. We further refine the weights using Channel-Independent Second-Order Optimization for a granular VQ. In addition, by decomposing the optimization problem, we propose a brief and effective codebook initialization algorithm. We also extend VPTQ to support residual and outlier quantization, which enhances model accuracy and further compresses the model. Our experimental results show that VPTQ reduces model quantization perplexity by - on LLaMA-2, - on Mistral-7B, - on LLaMA-3 over SOTA at 2-bit, with an average accuracy improvement of - on LLaMA-2,  on Mistral-7B, - on LLaMA-3 on QA tasks on average. We only utilize - of the quantization algorithm execution time, resulting in a - increase in inference throughput compared to SOTA.'
+date: 2024-11-01
+venue: 'The 2024 Conference on Empirical Methods in Natural Language Processing (EMNLP)'
+paperurl: 'https://aclanthology.org/2024.emnlp-main.467.pdf'
+citation: 'Yifei Liu, Jicheng Wen, Yang Wang, Shengyu Ye, Li Lyna Zhang, Ting Cao, Cheng Li, Mao Yang. (2024). "VPTQ: Extreme Low-bit Vector Post-Training Quantization for Large Language Models." <i>EMNLP</i>.'
+---

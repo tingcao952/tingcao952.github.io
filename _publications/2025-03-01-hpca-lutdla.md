@@ -1,0 +1,11 @@
+---
+title: "LUT-DLA: Lookup Table as Efficient Extreme Low-Bit Deep Learning Accelerator"
+collection: publications
+category: conferences
+permalink: /publication/2025-03-01-hpca-lutdla
+excerpt: 'The emergence of neural network capabilities invariably leads to a significant surge in computational demands due to expanding model sizes and increased computational complexity. To reduce model size and lower inference costs, recent research has focused on simplifying models and designing hardware accelerators using low-bit quantization. However, due to numerical representation limits, scalar quantization cannot reduce bit width lower than 1-bit, diminishing its benefits. To break through these limitations, we introduce LUT-DLA, a Look-Up Table (LUT) Deep Learning Accelerator Framework that utilizes vector quantization to convert neural network models into LUTs, achieving extreme low-bit quantization. The LUT-DLA framework facilitates efficient and cost-effective hardware accelerator designs and supports the LUTBoost algorithm, which helps to transform various DNN models into LUT-based models via multistage training, drastically cutting both computational and hardware overhead. Additionally, through co-design space exploration, LUT-DLA assesses the impact of various model and hardware parameters to fine-tune hardware configurations for different application scenarios, optimizing performance and efficiency. Our comprehensive experiments show that LUT-DLA achieves improvements in power efficiency and area efficiency with gains of 1.4~7.0× and 1.5~146.1×, respectively, while maintaining only a modest accuracy drop. For CNNs, accuracy decreases by 0.1%~3.1% using the L2 distance similarity, 0.1%~3.4% with the L1 distance similarity, and 0.1%~3.8% when employing the Chebyshev distance similarity. For transformer-based models, the accuracy drop ranges from 1.4% to 3.0%.'
+date: 2025-03-01
+venue: '31st IEEE International Symposium on High-Performance Computer Architecture (HPCA)'
+paperurl: 'https://ieeexplore.ieee.org/abstract/document/10946705'
+citation: 'Guoyu Li, Chunyun Chen, Shengyu Ye, Yang Wang, Fan Yang, Ting Cao, Mohamed M. Sabry Aly, Cheng Liu, Mao Yang. (2025). "LUT-DLA: Lookup Table as Efficient Extreme Low-Bit Deep Learning Accelerator." <i>HPCA</i>.'
+---
