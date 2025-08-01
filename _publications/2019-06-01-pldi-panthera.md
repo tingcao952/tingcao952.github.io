@@ -1,0 +1,11 @@
+---
+title: "Panthera: Holistic Memory Management for Big Data Processing over Hybrid Memories"
+collection: publications
+category: conferences
+permalink: /publication/2019-06-01-pldi-panthera
+excerpt: 'Modern data-parallel systems such as Spark rely increasingly on in-memory computing that can significantly improve the efficiency of iterative algorithms. To process real-world datasets, modern data-parallel systems often require extremely large amounts of memory, which are both costly and energy-inefficient. Emerging non-volatile memory (NVM) technologies offers high capacity compared to DRAM and low energy compared to SSDs. Hence, NVMs have the potential to fundamentally change the dichotomy between DRAM and durable storage in Big Data processing. However, most Big Data applications are written in managed languages (e.g., Scala and Java) and executed on top of a managed runtime (e.g., the Java Virtual Machine) that already performs various dimensions of memory management. Supporting hybrid physical memories adds in a new dimension, creating unique challenges in data replacement and migration. This paper proposes Panthera, a semantics-aware, fully automated memory management technique for Big Data processing over hybrid memories. Panthera analyzes user programs on a Big Data system to infer their coarse-grained access patterns, which are then passed down to the Panthera runtime for efficient data placement and migration. For Big Data applications, the coarse-grained data division is accurate enough to guide GC for data layout, which hardly incurs data monitoring and moving overhead. We have implemented Panthera in OpenJDK and Apache Spark. An extensive evaluation with various datasets and applications demonstrates that Panthera reduces energy by 32 – 52% at only a 1 – 9% execution time overhead.'
+date: 2019-06-01
+venue: 'ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI)'
+paperurl: 'https://dl.acm.org/doi/abs/10.1145/3314221.3314650'
+citation: 'C. Wang, H. Cui, T. Cao, J. Zigman, H. Volos, O. Mutlu, F. Lv, X. Feng, and H. Xu. (2019). "Panthera: Holistic Memory Management for Big Data Processing over Hybrid Memories." <i>ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI)</i>.'
+---
