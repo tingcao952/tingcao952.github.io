@@ -8,4 +8,6 @@ date: 2023-10-10
 venue: 'The 29th Annual International Conference On Mobile Computing And Networking (MobiCom)'
 paperurl: 'https://dl.acm.org/doi/abs/10.1145/3570361.3613285'
 citation: 'Xiaohu Tang, Yang Wang, Ting Cao, Li Lyna Zhang, Qi Chen, Deng Cai, Yunxin Liu, Mao Yang. (2023). "LUT-NN: Empower Efficient Neural Network Inference with Centroid Learning and Table Lookup." <i>MobiCom</i>.'
+award: 'Microsoft Research Focus 2023'
+awardurl: 'https://www.microsoft.com/en-us/research/blog/research-focus-week-of-november-8-2023/'
 ---

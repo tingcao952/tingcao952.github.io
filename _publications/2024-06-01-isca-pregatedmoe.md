@@ -8,4 +8,6 @@ date: 2024-06-01
 venue: 'The 51st Annual International Symposium on Computer Architecture 2024 (ISCA’24)'
 paperurl: 'https://ieeexplore.ieee.org/abstract/document/10609634'
 citation: 'R. Hwang, J. Wei, S. Cao, C. Hwang, X. Tang, Ting Cao, M. Yang. (2024). "Pre-gated MoE: An Algorithm-System Co-Design for Fast and Scalable Mixture-of-Expert Inference." <i>ISCA’24</i>.'
+award: 'Microsoft Research Focus 2024'
+awardurl: 'https://www.microsoft.com/en-us/research/blog/research-focus-week-of-july-15-2024/'
 ---
