@@ -8,6 +8,5 @@ date: 2021-06-01
 venue: '19th International Conference on Mobile Systems, Applications, and Services (MobiSys)'
 paperurl: 'https://dl.acm.org/doi/10.1145/3458864.3467882'
 citation: 'L. Zhang, S. Han, J. Wei, N. Zheng, T. Cao, Y. Yang, Y. Liu. (2021). "nn-Meter: towards accurate latency prediction of deep-learning model inference on diverse edge devices." <i>19th International Conference on Mobile Systems, Applications, and Services (MobiSys)</i>.'
+award: 'Best Paper Award'
 ---
-
-**Best Paper Award**
