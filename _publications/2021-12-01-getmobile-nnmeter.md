@@ -8,5 +8,5 @@ date: 2021-12-01
 venue: 'GetMobile: Mobile Computing and Communications, Research Highlights'
 paperurl: 'https://dl.acm.org/doi/abs/10.1145/3529706.3529712'
 citation: 'L. Zhang, S. Han, J. Wei, N. Zheng, T. Cao, Y. Yang, Y. Liu. (2021). "nn-Meter: towards accurate latency prediction of DNN inference on diverse edge devices." <i>GetMobile: Mobile Computing and Communications, Research Highlights</i>, 25(4): pp. 19-23.'
+award: 'ACM SigMobile Research Highlight'
 ---
-**ACM SigMobile Research Highlight**

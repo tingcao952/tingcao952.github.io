@@ -8,4 +8,5 @@ date: 2024-03-05
 venue: 'ACM SIGPLAN Annual Symposium on Principles and Practice of Parallel Programming (PPoPP)'
 paperurl: 'https://dl.acm.org/doi/abs/10.1145/3627535.3638476'
 citation: 'Yuetao Chen, Kun Li, Yuhao Wang, Donglin Bai, Lei Wang, Lingxiao Ma, Liang Yuan, Yunquan Zhang, Ting Cao, Mao Yang. (2024). "ConvStencil: Transform Stencil Computation to Matrix Multiplication on Tensor Cores." <i>PPoPP</i>.'
+award: 'Best Paper Award'
 ---

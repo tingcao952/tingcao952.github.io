@@ -8,4 +8,6 @@ date: 2022-10-01
 venue: 'Proceedings of the 28th Annual International Conference on Mobile Computing and Networking (MobiCom)'
 paperurl: 'https://dl.acm.org/doi/abs/10.1145/3495243.3517020'
 citation: 'Rendong Liang, Ting Cao, Jicheng Wen, Manni Wang, Yang Wang, Jianhua Zou, Yunxin Liu. (2022). "Romou: Rapidly Generate High-Performance Tensor Kernels for Mobile GPUs." <i>Proceedings of the 28th Annual International Conference on Mobile Computing and Networking (MobiCom)</i>.'
+award: 'ArchProbe: 2022-2023 Top 100 Open Source Achievements Award'
+awardurl: 'https://www.benchcouncil.org/evaluation/opencs/annual.html'
 ---
