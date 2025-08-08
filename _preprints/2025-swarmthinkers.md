@@ -1,0 +1,10 @@
+---
+title: "SwarmThinkers: Learning Physically Consistent Atomic KMC Transitions at Scale"
+collection: preprints
+permalink: /preprints/2025-swarmthinkers
+excerpt: 'Can a scientific simulation system be physically consistent, interpretable by design, and scalable across regimes--all at once? Despite decades of progress, this trifecta remains elusive. Classical methods like Kinetic Monte Carlo ensure thermodynamic accuracy but scale poorly; learning-based methods offer efficiency but often sacrifice physical consistency and interpretability. We present SwarmThinkers, a reinforcement learning framework that recasts atomic-scale simulation as a physically grounded swarm intelligence system. Each diffusing particle is modeled as a local decision-making agent that selects transitions via a shared policy network trained under thermodynamic constraints. A reweighting mechanism fuses learned preferences with transition rates, preserving statistical fidelity while enabling interpretable, step-wise decision making. Training follows a centralized-training, decentralized-execution paradigm, allowing the policy to generalize across system sizes, concentrations, and temperatures without retraining. On a benchmark simulating radiation-induced Fe-Cu alloy precipitation, SwarmThinkers is the first system to achieve full-scale, physically consistent simulation on a single A100 GPU, previously attainable only via OpenKMC on a supercomputer. It delivers up to 4963x (3185x on average) faster computation with 485x lower memory usage. By treating particles as decision-makers, not passive samplers, SwarmThinkers marks a paradigm shift in scientific simulation--one that unifies physical consistency, interpretability, and scalability through agent-driven intelligence.'
+date: 2025-05-01
+venue: 'arXiv'
+paperurl: 'https://arxiv.org/abs/2505.20094'
+citation: 'Qi Li, Kun Li, Haozhi Han, Honghui Shang, Xinfu He, Yunquan Zhang, Hong An, Ting Cao, Mao Yang. (2025). "SwarmThinkers: Learning Physically Consistent Atomic KMC Transitions at Scale." <i>arXiv</i>.'
+---
