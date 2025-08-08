@@ -1,0 +1,19 @@
+---
+layout: archive
+title: "Preprints and workshop papers"
+permalink: /preprint/
+author_profile: true
+---
+
+{% assign preprints_by_year = site.preprints | group_by_exp:"item", "item.date | date: '%Y'" %}
+{% assign preprints_by_year = preprints_by_year | sort: "name" | reverse %}
+
+{% for year_group in preprints_by_year %}
+  <h2 id="{{ year_group.name }}" class="archive__subtitle">{{ year_group.name }}</h2>
+  
+  {% assign counter = preprints_by_year.size | plus: 1 %}
+  {% for post in year_group.items %}
+    {% assign counter = counter | minus: 1 %}
+    {% include archive-single.html type="preprint" counter=counter %}
+  {% endfor %}
+{% endfor %}
