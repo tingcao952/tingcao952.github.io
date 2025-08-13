@@ -1,6 +1,6 @@
 ---
 title: "Stream Video Understanding"
-excerpt: "Media coverage of our work on real-time streaming video understanding.<br/><img src='/images/streammind.png'>"
+excerpt: "Media coverage of our work on real-time streaming video understanding.<br/><img src='/images/streammind2.png'>"
 collection: portfolio
 ---
 
