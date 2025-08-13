@@ -1,6 +1,6 @@
 ---
 title: "Stream Video Understanding"
-excerpt: ""
+excerpt: "Media coverage for our work on Stream Video Understanding"
 collection: portfolio
 ---
 
