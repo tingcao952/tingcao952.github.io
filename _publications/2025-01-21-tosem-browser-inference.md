@@ -7,5 +7,5 @@ excerpt: 'Web applications have increasingly adopted Deep Learning (DL) through 
 date: 2025-01-21
 venue: 'ACM Transactions on Software Engineering and Methodology (TOSEM)'
 paperurl: 'https://dl.acm.org/doi/full/10.1145/3688843'
-citation: 'Qipeng Wang, Shiqi Jiang, Zhenpeng Chen, Xu Cao, Yuanchun Li, Aoyu Li, Yun Ma, Ting Cao, Xuanzhe Liu. (2024). "Anatomizing Deep Learning Inference in Web Browsers." <i>TOSEM</i>.'
+citation: 'Qipeng Wang, Shiqi Jiang, Zhenpeng Chen, Xu Cao, Yuanchun Li, Aoyu Li, Yun Ma, Ting Cao, Xuanzhe Liu. (2025). "Anatomizing Deep Learning Inference in Web Browsers." <i>TOSEM</i>.'
 ---
