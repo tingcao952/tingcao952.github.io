@@ -8,4 +8,5 @@ date: 2024-11-01
 venue: 'International Conference for High Performance Computing, Networking, Storage, and Analysis (SC’24)'
 paperurl: 'https://ieeexplore.ieee.org/abstract/document/10793164'
 citation: 'Yiwei Zhang, Kun Li, Liang Yuan, Jiawen Cheng, Yunquan Zhang, Ting Cao, Mao Yang. (2024). "LoRAStencil: Low-Rank Adaptation of Stencil Computation on Tensor Cores." <i>SC’24</i>.'
+award: 'SC 2025 Reproducibility Challenge Finalist'
 ---

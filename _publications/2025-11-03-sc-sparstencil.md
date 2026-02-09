@@ -8,4 +8,5 @@ date: 2025-11-03
 venue: "International Conference for High Performance Computing, Networking, Storage, and Analysis (SC)"
 paperurl: 'https://dl.acm.org/doi/10.1145/3712285.3759820'
 citation: 'Qi Li, Kun Li, Liang Yuan, Junshi Chen, Hong An, Yunquan Zhang, Ting Cao, Mao Yang. (2025). "SparStencil: Retargeting Sparse Tensor Cores to Scientific Stencil Computations via Structured Sparsity Transformation." <i>SC</i>.'
+award: 'SC 2025 Best Student Paper Award Finalist'
 ---
