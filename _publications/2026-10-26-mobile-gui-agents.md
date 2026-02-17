@@ -7,5 +7,5 @@ excerpt: 'We propose V-Droid, a mobile GUI task automation agent. Unlike previou
 date: 2026-10-26
 venue: 'The 32nd Annual International Conference On Mobile Computing And Networking (MobiCom)'
 paperurl: 'https://arxiv.org/abs/2503.15937'
-citation: 'Gaole Dai, Shiqi Jiang, Ting Cao, Yuanchun Li, Yuqing Yang, Rui Tan, Mo Li, Lili Qiu. (2025). "V-Droid: Advancing Mobile GUI Agent Through Generative Verifiers." <i>MobiCom</i>.'
+citation: 'Gaole Dai, Shiqi Jiang, Ting Cao, Yuanchun Li, Yuqing Yang, Rui Tan, Mo Li, Lili Qiu. (2026). "V-Droid: Advancing Mobile GUI Agent Through Generative Verifiers." <i>MobiCom</i>.'
 ---
