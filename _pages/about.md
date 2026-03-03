@@ -8,7 +8,7 @@ redirect_from:
 ---
 ## Research
 
-Dr. Ting Cao is a Professor at the Institute of AI Industry Research (AIR), Tsinghua University. Her research interest include Edge AI, large foundation model algorithms, AI inference systems, and novel AI accelerators. Her research works have been published in top-tier computer system conferences such as **ISCA, ASPLOS, MobiCom, MobiSys, NSDI, OSDI, PLDI, EuroSys, SC, and PPoPP**, as well as leading AI algorithm venues including **ICCV, ACL, and KDD**.
+Dr. Ting Cao is a Professor at the Institute for AI Industry Research (AIR), Tsinghua University. Her research interest include Edge AI, Embodied AI, AI training/inference systems, and novel AI accelerators. Her research works have been published in top-tier computer system conferences such as **ISCA, ASPLOS, MobiCom, MobiSys, NSDI, OSDI, PLDI, EuroSys, SC, and PPoPP**, as well as leading AI algorithm venues such as **ICCV, ICLR, NeurIPS and ACL**.
 
 She has numerous awards, such as 2012 **ACM Research highlights**, 2012
 **IEEE Micro Top Picks**, 2021 **ACM SIGMOBILE Research highlights**, and **PPoPP'24, MobiSys'21, NAS'14 and ICCD'10
