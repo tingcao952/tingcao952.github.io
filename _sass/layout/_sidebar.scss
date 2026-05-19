@@ -104,6 +104,25 @@
   }
 }
 
+.author__affiliation-logo {
+  display: none;
+
+  @include breakpoint($large) {
+    display: block;
+    margin-top: 14px;
+    text-align: center;
+  }
+
+  img {
+    width: auto;
+    max-width: 175px;
+    max-height: 58px;
+    border: 0;
+    border-radius: 0;
+    padding: 0;
+  }
+}
+
 .author__content {
   display: table-cell;
   vertical-align: top;
