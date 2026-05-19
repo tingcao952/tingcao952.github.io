@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1140" height="228" viewBox="0 0 1140 228" role="img" aria-labelledby="title desc">
+  <title id="title">Vec-LUT MobiSys Featured Paper</title>
+  <desc id="desc">Conference program snippet showing Vec-LUT listed as a featured paper in Session 7: On-Device AI.</desc>
+  <rect width="1140" height="228" fill="#ffffff"/>
+  <text x="16" y="34" fill="#0f3d73" font-family="Georgia, 'Times New Roman', serif" font-size="20" font-weight="700">Session 7: On-Device AI</text>
+  <text x="1112" y="34" fill="#6b7280" font-family="Arial, Helvetica, sans-serif" font-size="22">−</text>
+  <rect x="0" y="54" width="1140" height="46" fill="#f3f4f6"/>
+  <text x="16" y="82" fill="#000000" font-family="Arial, Helvetica, sans-serif" font-size="16"><tspan font-weight="700">Session Chair:</tspan><tspan> Dongqi Cai</tspan></text>
+  <text x="16" y="134" fill="#000000" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">Vec-LUT: Vector Table Lookup for Parallel Ultra-Low-Bit LLM Inference on Edge Devices</text>
+  <rect x="698" y="123" rx="7" ry="7" width="118" height="22" fill="#114a8b"/>
+  <text x="757" y="139" text-anchor="middle" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="11.5" font-weight="700">Featured Paper</text>
+  <text x="16" y="165" fill="#111111" font-family="Arial, Helvetica, sans-serif" font-size="14" font-style="italic">Xiangyu Li (Institute for AI Industry Research (AIR), Tsinghua University); Chengyu Yin (Beijing Jiaotong University); Weijun Wang (Institute for AI</text>
+  <text x="16" y="191" fill="#111111" font-family="Arial, Helvetica, sans-serif" font-size="14" font-style="italic">Industry Research (AIR), Tsinghua University); Jianyu Wei (University of Science and Technology of China); Ting Cao, Yunxin Liu (Institute for AI</text>
+  <text x="16" y="217" fill="#111111" font-family="Arial, Helvetica, sans-serif" font-size="14" font-style="italic">Industry Research (AIR), Tsinghua University)</text>
+  <line x1="0" y1="99.5" x2="1140" y2="99.5" stroke="#d9dde5" stroke-width="1"/>
+</svg>

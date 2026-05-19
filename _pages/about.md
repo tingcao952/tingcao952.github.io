@@ -10,6 +10,12 @@ redirect_from:
 
 Dr. Ting Cao is a Professor at the Institute for AI Industry Research (AIR), Tsinghua University. Her research interest include Edge AI, Embodied AI, AI training/inference systems, and novel AI accelerators. Her research works have been published in top-tier computer system conferences such as **ISCA, ASPLOS, MobiCom, MobiSys, NSDI, OSDI, PLDI, EuroSys, SC, and PPoPP**, as well as leading AI algorithm venues such as **ICCV, ICLR, NeurIPS and ACL**.
 
+<p>
+  <a href="https://air.tsinghua.edu.cn/en/" target="_blank" rel="noopener noreferrer">
+    <img src="{{ '/images/tsinghua-air-logo.png' | relative_url }}" alt="Tsinghua AIR logo" style="max-width: 280px; width: 100%; margin: 0.75rem 0 1.25rem 0;" />
+  </a>
+</p>
+
 She has numerous awards, such as 2012 **ACM Research highlights**, 2012
 **IEEE Micro Top Picks**, 2021 **ACM SIGMOBILE Research highlights**, and **PPoPP'24, MobiSys'21, NAS'14 and ICCD'10
 Best paper awards**.
