@@ -12,10 +12,6 @@
     {% else %}
     	<img src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" class="author__avatar" alt="{{ author.name }}"  fetchpriority="high" />
     {% endif %}
-
-    <a class="author__affiliation-logo" href="https://air.tsinghua.edu.cn/en/" target="_blank" rel="noopener noreferrer" aria-label="Institute for AI Industry Research, Tsinghua University">
-      <img src="{{ '/images/tsinghua-air-logo.png' | relative_url }}" alt="Tsinghua AIR" />
-    </a>
   </div>
 
   <div class="author__content">

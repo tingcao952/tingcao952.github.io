@@ -2,6 +2,10 @@
 permalink: /
 title: "About Ting Cao"
 author_profile: true
+title_logo:
+  src: /images/tsinghua-air-logo.png
+  alt: Tsinghua AIR
+  link: https://air.tsinghua.edu.cn/en/
 redirect_from: 
   - /about/
   - /about.html

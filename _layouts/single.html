@@ -26,7 +26,16 @@ layout: default
     <div class="page__inner-wrap">
       {% unless page.header.overlay_color or page.header.overlay_image %}
         <header>
-          {% if page.title %}<h1 class="page__title" itemprop="headline">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>{% endif %}
+          {% if page.title %}
+            <div class="page__title-row">
+              <h1 class="page__title" itemprop="headline">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>
+              {% if page.title_logo %}
+                <a class="page__title-logo" href="{{ page.title_logo.link | default: '#' }}"{% if page.title_logo.link %} target="_blank" rel="noopener noreferrer"{% endif %}>
+                  <img src="{{ page.title_logo.src | relative_url }}" alt="{{ page.title_logo.alt | default: 'Title logo' }}" />
+                </a>
+              {% endif %}
+            </div>
+          {% endif %}
           {% if page.read_time %}
             <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
           {% endif %}
