@@ -30,4 +30,6 @@ She received her PhD from the School of Computing at the Australian National Uni
 
 ## Community Serving
 
-Dr. Cao serves as an Associate Editor for the journal *IEEE Transactions on Computers* . She has also served on the program committees of conferences such as MobiSys, PLDI, OOPSLA, VEE, ChinaSys, and ISMM.
+Dr. Cao is serving as an Associate Editor for the journal *IEEE Transactions on Computers* . 
+She is now also serving as the Vice Chair for ASPLOS'27.  
+She has also served on the program committees of conferences such as MobiSys, PLDI, OOPSLA, VEE, ChinaSys, ISMM, et al.
