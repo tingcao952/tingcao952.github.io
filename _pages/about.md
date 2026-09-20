@@ -15,8 +15,7 @@ redirect_from:
 Dr. Ting Cao is a Professor at the Institute for AI Industry Research (AIR), Tsinghua University. Her research interest include Edge AI, Embodied AI, AI training/inference systems, and novel AI accelerators. Her research works have been published in top-tier computer system conferences such as **ISCA, ASPLOS, MobiCom, MobiSys, NSDI, OSDI, PLDI, EuroSys, SC, and PPoPP**, as well as leading AI algorithm venues such as **ICCV, ICLR, NeurIPS and ACL**.
 
 She has numerous awards, such as 2012 **ACM Research highlights**, 2012
-**IEEE Micro Top Picks**, 2021 **ACM SIGMOBILE Research highlights**, and **PPoPP'24, MobiSys'21, NAS'14 and ICCD'10
-Best paper awards**.
+**IEEE Micro Top Picks**, 2021 **ACM SIGMOBILE Research highlights**, **PPoPP'24 Best Paper Award, MobiSys'21 Best Paper Award, NAS'14 Best Paper Award, ICCD'10 Best Paper Award, and MobiSys'26 Best Paper Runner-Up**.
 
 Dr. Cao’s research has significantly advanced the field of AI on edge devices, making it possible to deploy complex deep neural networks and large language models directly on [consumer devices such as smartphones and PCs](https://www.microsoft.com/en-us/research/blog/achieving-zero-cogs-with-microsoft-editor-neural-grammar-checker/), greatly lowering Cloud operational costs. Her innovations have been integrated into products used by millions, including Microsoft Office, Windows, Bing, and Huawei HarmonyOS.
 
@@ -30,6 +29,6 @@ She received her PhD from the School of Computing at the Australian National Uni
 
 ## Community Serving
 
-Dr. Cao is serving as an Associate Editor for the journal *IEEE Transactions on Computers* . 
-She is now also serving as the Vice Chair for ASPLOS'27.  
+Dr. Cao is serving as an Associate Editor for the journal *IEEE Transactions on Computers* .
+She is now also serving as the Vice Chair for ASPLOS'27.
 She has also served on the program committees of conferences such as MobiSys, PLDI, OOPSLA, VEE, ChinaSys, ISMM, et al.
