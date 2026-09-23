@@ -107,6 +107,35 @@
   }
 }
 
+.publications-page {
+  .archive__subtitle {
+    margin-top: 1em;
+    padding-bottom: 0.25em;
+    font-size: $type-size-6;
+  }
+
+  hr {
+    margin: 0 0 0.5em;
+  }
+
+  .list__item {
+    padding-right: 0;
+    margin-bottom: 0.65em;
+  }
+
+  .archive__item-title {
+    margin: 0 0 0.15em;
+    font-size: $type-size-6;
+    line-height: 1.3;
+  }
+
+  .archive__item p {
+    margin: 0.1em 0;
+    font-size: $type-size-7;
+    line-height: 1.35;
+  }
+}
+
 
 /*
    Grid view
