@@ -67,11 +67,33 @@
   }
 }
 
-.page__authors {
+.page__authors,
+.page__publication-meta {
   margin: 0.5em 0 0.25em;
   color: var(--global-text-color-light);
   font-size: $type-size-6;
   line-height: 1.45;
+}
+
+.page__publication-meta {
+  margin-top: 0.25em;
+}
+
+.page__abstract {
+  margin-top: 1.5em;
+  line-height: 1.55;
+}
+
+.page__bibtex {
+  margin-top: 1.75em;
+
+  > p {
+    margin-bottom: 0.5em;
+  }
+
+  pre {
+    margin-top: 0;
+  }
 }
 
 .page__lead {

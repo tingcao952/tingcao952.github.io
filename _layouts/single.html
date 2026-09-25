@@ -50,7 +50,7 @@ layout: default
         {% if page.collection == 'teaching' %}
           <p> {{ page.type }}, <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif page.venue and page.date %}
-          <p>Published in <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
+          <p{% if page.collection == 'publications' %} class="page__publication-meta"{% endif %}><strong>Published in:</strong> <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif page.date %}
           <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
         {% endif %}    
@@ -59,7 +59,11 @@ layout: default
 
       <section class="page__content" itemprop="text">
         {% if page.excerpt %}
-          <div class="page__excerpt">{{ page.excerpt }}</div>
+          {% if page.collection == 'publications' %}
+            <div class="page__abstract"><strong>Abstract:</strong> {{ page.excerpt }}</div>
+          {% else %}
+            <div class="page__excerpt">{{ page.excerpt }}</div>
+          {% endif %}
         {% endif %}
         {{ content }}
 
@@ -72,6 +76,7 @@ layout: default
           {% endif %}
           {% assign bib_authors = bib_authors | replace: ', and ', ' and ' | replace: ', ', ' and ' %}
           {% assign bib_key = page.slug | replace: '-', '' %}
+          <div class="page__bibtex">
           <p><strong>BibTeX</strong></p>
           <pre><code>{% if page.category == 'journals' %}@article{% else %}@inproceedings{% endif %}{% raw %}{{% endraw %}{{ bib_key }},
   title={% raw %}{{% endraw %}{{ page.title | strip_html }}{% raw %}}{% endraw %},
@@ -79,6 +84,7 @@ layout: default
   {% if page.category == 'journals' %}journal{% else %}booktitle{% endif %}={% raw %}{{% endraw %}{{ page.venue | strip_html }}{% raw %}}{% endraw %},
   year={% raw %}{{% endraw %}{{ page.date | date: "%Y" }}{% raw %}}{% endraw %}
 }</code></pre>
+          </div>
         {% endif %}
 
         {% if page.paperurl or page.slidesurl or page.bibtexurl %}
