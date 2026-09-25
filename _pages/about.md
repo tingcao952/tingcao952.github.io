@@ -20,7 +20,7 @@ redirect_from:
 
 Dr. Ting Cao is a Professor at the Institute for AI Industry Research (AIR), Tsinghua University, and also the Founder of Z-Trans AI startup. Her current research centers on **embodied intelligence**, with a particular focus on **self-evolving physical intelligence**: building closed-loop systems in which embodied model and agents continually learn from interaction, improve their causal understanding, and translate that knowledge into more generalizable behavior. Her broader interests include Edge AI, AI training and inference systems, and novel AI accelerators.
 
-Her work spans the full embodied intelligence stack, from learning and reasoning algorithms to efficient systems and hardware. It has been published at leading systems venues, including **ISCA, ASPLOS, MobiCom, MobiSys, NSDI, OSDI, PLDI, EuroSys, SC, and PPoPP**, and AI venues including **ICLR, NeurIPS, ICML, and ICCV**.
+Her work spans the full embodied intelligence stack, from learning and reasoning algorithms to efficient systems and hardware. It has been published at leading systems venues, including **ISCA, ASPLOS, MobiCom, MobiSys, NSDI, SigCOMM, OSDI, PLDI, EuroSys, SC, and PPoPP**, and AI venues including **ICLR, NeurIPS, ICML, ICCV, ECCV, ACL, KDD, and EMNLP**.
 
 She has numerous awards, such as 2012 **ACM Research highlights**, 2012
 **IEEE Micro Top Picks**, 2021 **ACM SIGMOBILE Research highlights**, **PPoPP'24 Best Paper Award, MobiSys'21 Best Paper Award, NAS'14 Best Paper Award, ICCD'10 Best Paper Award, and MobiSys'26 Best Paper Runner-Up**.

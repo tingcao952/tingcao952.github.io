@@ -36,6 +36,10 @@ layout: default
               {% endif %}
             </div>
           {% endif %}
+          {% if page.collection == 'publications' and page.citation %}
+            {% assign publication_authors = page.citation | split: ' (' | first %}
+            <p class="page__authors"><strong>Authors:</strong> {{ publication_authors }}</p>
+          {% endif %}
           {% if page.read_time %}
             <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
           {% endif %}
@@ -59,30 +63,32 @@ layout: default
         {% endif %}
         {{ content }}
 
-        {% if page.citation and page.paperurl and page.slidesurl and page.bibtexurl %}
-          <p style="font-size: smaller">Recommended citation: {{ page.citation }}<br /><a href="{{ page.paperurl }}">Download Paper</a> | <a href="{{ page.slidesurl }}">Download Slides</a> | <a href="{{ page.bibtexurl }}">Download Bibtex</a></p>
-        {% elsif page.citation and page.paperurl and page.slidesurl %}
-          <p style="font-size: smaller">Recommended citation: {{ page.citation }}<br /><a href="{{ page.paperurl }}">Download Paper</a> | <a href="{{ page.slidesurl }}">Download Slides</a></p>
-        {% elsif page.citation and page.paperurl and page.bibtexurl %}
-          <p style="font-size: smaller">Recommended citation: {{ page.citation }}<br /><a href="{{ page.paperurl }}">Download Paper</a> | <a href="{{ page.bibtexurl }}">Download Bibtex</a></p>
-        {% elsif page.citation and page.paperurl %}
-          <p style="font-size: smaller">Recommended citation: {{ page.citation }}<br /><a href="{{ page.paperurl }}">Download Paper</a></p>
-        {% elsif page.citation and page.slidesurl and page.bibtexurl %}
-          <p style="font-size: smaller">Recommended citation: {{ page.citation }}<br /><a href="{{ page.slidesurl }}">Download Slides</a> | <a href="{{ page.bibtexurl }}">Download Bibtex</a></p>
-        {% elsif page.citation and page.slidesurl %}
-          <p style="font-size: smaller">Recommended citation: {{ page.citation }}<br /><a href="{{ page.slidesurl }}">Download Slides</a></p>
-        {% elsif page.slidesurl and page.bibtexurl %}
-          <p style="font-size: smaller"><a href="{{ page.slidesurl }}">Download Slides</a> | <a href="{{ page.bibtexurl }}">Download Bibtex</a></p>
-        {% elsif page.paperurl and page.bibtexurl %}
-          <p style="font-size: smaller"><a href="{{ page.paperurl }}">Download Paper</a> | <a href="{{ page.bibtexurl }}">Download Bibtex</a></p>
-        {% elsif page.citation and page.bibtexurl %}
-          <p style="font-size: smaller">Recommended citation: {{ page.citation }}<br /><a href="{{ page.bibtexurl }}">Download Bibtex</a></p>
-        {% elsif page.citation %}
-          <p style="font-size: smaller">Recommended citation: {{ page.citation }}</p>
-        {% elsif page.slidesurl %}
-          <p style="font-size: smaller"><a href="{{ page.slidesurl }}">Download Slides</a></p>
-        {% elsif page.bibtexurl %}
-          <p style="font-size: smaller"><a href="{{ page.bibtexurl }}">Download Bibtex</a></p>
+        {% if page.collection == 'publications' and page.citation %}
+          {% assign bib_authors = page.citation | split: ' (' | first %}
+          {% assign bib_author_end = bib_authors | slice: -1, 1 %}
+          {% if bib_author_end == '.' %}
+            {% assign bib_author_length = bib_authors | size | minus: 1 %}
+            {% assign bib_authors = bib_authors | slice: 0, bib_author_length %}
+          {% endif %}
+          {% assign bib_authors = bib_authors | replace: ', and ', ' and ' | replace: ', ', ' and ' %}
+          {% assign bib_key = page.slug | replace: '-', '' %}
+          <p><strong>BibTeX</strong></p>
+          <pre><code>{% if page.category == 'journals' %}@article{% else %}@inproceedings{% endif %}{% raw %}{{% endraw %}{{ bib_key }},
+  title={% raw %}{{% endraw %}{{ page.title | strip_html }}{% raw %}}{% endraw %},
+  author={% raw %}{{% endraw %}{{ bib_authors }}{% raw %}}{% endraw %},
+  {% if page.category == 'journals' %}journal{% else %}booktitle{% endif %}={% raw %}{{% endraw %}{{ page.venue | strip_html }}{% raw %}}{% endraw %},
+  year={% raw %}{{% endraw %}{{ page.date | date: "%Y" }}{% raw %}}{% endraw %}
+}</code></pre>
+        {% endif %}
+
+        {% if page.paperurl or page.slidesurl or page.bibtexurl %}
+          <p style="font-size: smaller">
+            {% if page.paperurl %}<a href="{{ page.paperurl }}">Download Paper</a>{% endif %}
+            {% if page.paperurl and page.slidesurl %} | {% endif %}
+            {% if page.slidesurl %}<a href="{{ page.slidesurl }}">Download Slides</a>{% endif %}
+            {% if page.bibtexurl and page.paperurl or page.bibtexurl and page.slidesurl %} | {% endif %}
+            {% if page.bibtexurl %}<a href="{{ page.bibtexurl }}">Download Bibtex</a>{% endif %}
+          </p>
         {% endif %}
 
         {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
