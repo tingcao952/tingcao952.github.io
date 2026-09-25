@@ -79,12 +79,21 @@ layout: default
           {% endif %}
           {% assign bib_authors = bib_authors | replace: ', and ', ' and ' | replace: ', ', ' and ' %}
           {% assign bib_key = page.slug | replace: '-', '' %}
+          {% assign is_arxiv = false %}
+          {% if page.collection == 'preprints' and page.venue == 'arXiv' %}
+            {% assign is_arxiv = true %}
+            {% assign arxiv_id = page.paperurl | split: '/abs/' | last | split: '/pdf/' | last | remove: '.pdf' | split: '?' | first %}
+          {% endif %}
           <div class="page__bibtex">
           <p><strong>BibTeX</strong></p>
-          <pre><code>{% if page.category == 'journals' %}@article{% else %}@inproceedings{% endif %}{% raw %}{{% endraw %}{{ bib_key }},
+          <pre><code>{% if page.category == 'journals' or is_arxiv %}@article{% else %}@inproceedings{% endif %}{% raw %}{{% endraw %}{{ bib_key }},
   title={% raw %}{{% endraw %}{{ page.title | strip_html }}{% raw %}}{% endraw %},
   author={% raw %}{{% endraw %}{{ bib_authors }}{% raw %}}{% endraw %},
-  {% if page.category == 'journals' %}journal{% else %}booktitle{% endif %}={% raw %}{{% endraw %}{{ page.venue | strip_html }}{% raw %}}{% endraw %},
+  {% if page.category == 'journals' or is_arxiv %}journal{% else %}booktitle{% endif %}={% raw %}{{% endraw %}{% if is_arxiv %}arXiv preprint arXiv:{{ arxiv_id }}{% else %}{{ page.venue | strip_html }}{% endif %}{% raw %}}{% endraw %},
+{% if is_arxiv %}  eprint={% raw %}{{% endraw %}{{ arxiv_id }}{% raw %}}{% endraw %},
+  archivePrefix={% raw %}{{% endraw %}arXiv{% raw %}}{% endraw %},
+  url={% raw %}{{% endraw %}{{ page.paperurl }}{% raw %}}{% endraw %},
+{% endif %}
   year={% raw %}{{% endraw %}{{ page.date | date: "%Y" }}{% raw %}}{% endraw %}
 }</code></pre>
           </div>
