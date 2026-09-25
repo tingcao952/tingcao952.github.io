@@ -12,6 +12,7 @@ redirect_from:
 ---
 ## 📣 News
 
+- **09/25/2026:** Three papers have been accepted to **NeurIPS 2026**: [OxyGen](https://arxiv.org/abs/2603.14371), [Learning to Commit](https://arxiv.org/abs/2603.26664), and AtomWorld-Mem. See you in Sydney!
 - **09/21/2026:** We hosted the [ICCL Self-Evolving Physical Intelligence Open Day](https://mp.weixin.qq.com/s/zI8GPvOg_nV46EP8UZ4HRA) in Wuxi. Prof. Ya-Qin Zhang opened the event and introduced **Physical Self-Improvement (PSI)**. We presented our closed-loop framework for self-evolving embodied intelligence, including [Zetta](https://air-embodied-brain.github.io/zetta/) and [Zeva](https://air-embodied-brain.github.io/Zeva/).
 - **09/21/2026:** We released [Zeva-Ego: Egocentric Mid-Training with In-Context Causal Learning for Robot Manipulation](https://air-embodied-brain.github.io/Zeva-Ego/), the first framework to learn physical causal priors for robot manipulation from unlabeled egocentric video.
 
