@@ -49,7 +49,7 @@
 
         {% if post.collection == 'teaching' %}
           <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
-        {% elsif post.collection == 'publications' %}
+        {% elsif post.collection == 'publications' or post.collection == 'preprints' %}
           {% assign venue_short = nil %}
           {% assign venue_name = nil %}
           {% assign venue_upcase = post.venue | upcase %}
@@ -90,7 +90,7 @@
     <p class="archive__item-excerpt" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p></p>
     {% endif %} -->
     
-    {% unless post.collection == 'publications' %}
+    {% unless post.collection == 'publications' or post.collection == 'preprints' %}
     {% if post.citation and post.paperurl and post.slidesurl and post.bibtexurl %}
         <p><strong>Bib:</strong> {{ post.citation }}<br /><a href="{{ post.paperurl }}">Download Paper</a> | <a href="{{ post.slidesurl }}">Download Slides</a> | <a href="{{ post.bibtexurl }}">Download Bibtex</a></p>
     {% elsif post.citation and post.paperurl and post.slidesurl %}

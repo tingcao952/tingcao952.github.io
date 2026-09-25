@@ -36,9 +36,11 @@ layout: default
               {% endif %}
             </div>
           {% endif %}
-          {% if page.collection == 'publications' and page.citation %}
+          {% if page.collection == 'publications' or page.collection == 'preprints' %}
+          {% if page.citation %}
             {% assign publication_authors = page.citation | split: ' (' | first %}
             <p class="page__authors"><strong>Authors:</strong> {{ publication_authors }}</p>
+          {% endif %}
           {% endif %}
           {% if page.read_time %}
             <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
@@ -50,7 +52,7 @@ layout: default
         {% if page.collection == 'teaching' %}
           <p> {{ page.type }}, <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif page.venue and page.date %}
-          <p{% if page.collection == 'publications' %} class="page__publication-meta"{% endif %}><strong>Published in:</strong> <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
+          <p{% if page.collection == 'publications' or page.collection == 'preprints' %} class="page__publication-meta"{% endif %}><strong>Published in:</strong> <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif page.date %}
           <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
         {% endif %}    
@@ -59,7 +61,7 @@ layout: default
 
       <section class="page__content" itemprop="text">
         {% if page.excerpt %}
-          {% if page.collection == 'publications' %}
+          {% if page.collection == 'publications' or page.collection == 'preprints' %}
             <div class="page__abstract"><strong>Abstract:</strong> {{ page.excerpt }}</div>
           {% else %}
             <div class="page__excerpt">{{ page.excerpt }}</div>
@@ -67,7 +69,8 @@ layout: default
         {% endif %}
         {{ content }}
 
-        {% if page.collection == 'publications' and page.citation %}
+        {% if page.collection == 'publications' or page.collection == 'preprints' %}
+        {% if page.citation %}
           {% assign bib_authors = page.citation | split: ' (' | first %}
           {% assign bib_author_end = bib_authors | slice: -1, 1 %}
           {% if bib_author_end == '.' %}
@@ -85,6 +88,7 @@ layout: default
   year={% raw %}{{% endraw %}{{ page.date | date: "%Y" }}{% raw %}}{% endraw %}
 }</code></pre>
           </div>
+        {% endif %}
         {% endif %}
 
         {% if page.paperurl or page.slidesurl or page.bibtexurl %}

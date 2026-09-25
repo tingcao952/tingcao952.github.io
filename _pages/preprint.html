@@ -5,13 +5,17 @@ permalink: /preprint/
 author_profile: true
 ---
 
-{% assign preprints_by_year = site.preprints | group_by_exp:"item", "item.date | date: '%Y'" %}
-{% assign preprints_by_year = preprints_by_year | sort: "name" | reverse %}
-
-{% for year_group in preprints_by_year %}
-  <h2 id="{{ year_group.name }}" class="archive__subtitle">{{ year_group.name }}</h2>
-  
-  {% for post in year_group.items %}
-    {% include archive-single.html type="preprint" %}
-  {% endfor %}
+<div class="publications-page">
+{% assign sorted_preprints = site.preprints | sort: 'date' | reverse %}
+{% assign current_timestamp = site.time | date: '%s' | plus: 0 %}
+{% assign six_months_seconds = 15552000 %}
+{% assign recent_cutoff = current_timestamp | minus: six_months_seconds %}
+{% assign counter = 0 %}
+{% for post in sorted_preprints %}
+  {% assign counter = counter | plus: 1 %}
+  {% assign post_timestamp = post.date | date: '%s' | plus: 0 %}
+  <div class="preprint-entry{% if post_timestamp >= recent_cutoff %} preprint-entry--recent{% else %} preprint-entry--older{% endif %}">
+    {% include archive-single.html counter=counter %}
+  </div>
 {% endfor %}
+</div>
