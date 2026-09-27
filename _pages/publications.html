@@ -20,8 +20,16 @@ author_profile: true
   {% assign counter = 0 %}
   {% assign sorted_posts = year.items | sort: 'date' | reverse %}
   {% for post in sorted_posts %}
+    {% unless post.category == 'journals' %}
     {% assign counter = counter | plus: 1 %}
     {% include archive-single.html counter=counter %}
+    {% endunless %}
+  {% endfor %}
+  {% for post in sorted_posts %}
+    {% if post.category == 'journals' %}
+    {% assign counter = counter | plus: 1 %}
+    {% include archive-single.html counter=counter %}
+    {% endif %}
   {% endfor %}
 {% endfor %}
 </div>
